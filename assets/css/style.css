@@ -1,3 +1,7 @@
+/* Font imported from google fonts OSwald*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+
 /* Asterik Used as wildcard selector to overide any other style*/
 * {
     padding:0;
@@ -5,6 +9,19 @@
     box-sizing: border-box;
 }
 
+/* General style for the body element*/
+
+body {
+    min-height: 100vh;
+    display:flex ;
+    flex-direction: column;
+
+    /* general Style properties*/
+    color: #3a3a3a
+    font-family:'Lato', sans-serif;
+
+
+}
 
 /*Header*/
 header {
@@ -14,6 +31,8 @@ header {
 /*Main Element*/
 main {
     background-color: lightblue;
+    /* takes up any whitespace to push footer down to bottom*/
+    flex: 1 0 auto;
 }
 
 /*Footer*/
